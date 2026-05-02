@@ -1,0 +1,188 @@
+Report on the Evolution of the Quantum Window-Search Circuits
+==============================================================
+
+1. Scope and objective
+----------------------
+
+The notebooks TFG_V0, TFG_V1, TFG_V2 and TFG_V3 implement a progressive
+development of a quantum circuit family for representing and querying local
+windows of a discrete spatial grid. The core computational object is a
+superposition of states of the form
+
+    sum_i |Window_i>|Index_i>|Grid>
+
+where |Grid> encodes the occupancy pattern of the full search space, |Index_i>
+selects one admissible window position, and |Window_i> stores the content of
+the corresponding local sub-grid. The project can be interpreted as the
+construction of a coherent memory-access primitive: for each valid window
+index, the circuit computes the associated local configuration without
+irreversibly measuring the grid.
+
+The four versions document a research trajectory:
+
+    V0: one-dimensional baseline.
+    V1: one-dimensional circuit with Gray-order optimisation and penalisation.
+    V2: extension to N-dimensional grids.
+    V3: N-dimensional circuit with oracle-based interference.
+
+2. Theoretical fundamentals
+---------------------------
+
+Let the grid have size N in one dimension and let the window length be M. The
+number of valid window starts is
+
+    W = N - M + 1.
+
+For a D-dimensional grid with per-axis sizes N = (N_1, ..., N_D) and window
+shape M = (M_1, ..., M_D), this generalises to
+
+    W = product_d (N_d - M_d + 1).
+
+The index register requires
+
+    k = ceil(log2(W))
+
+qubits, or one qubit when W = 1. If W is not a power of two, the Hilbert space
+of the index register contains invalid computational basis states. A correct
+state preparation must therefore initialise only the first W amplitudes and
+leave the remaining 2^k - W amplitudes equal to zero.
+
+The window-loading unitary computes, by reversible XOR, the content of the
+selected window into the work register:
+
+    |n>|i>|0>  ->  |n>|i>|window_i(n)>.
+
+In the implementation, each bit of the selected window is loaded using
+multi-controlled X gates. The controls are the index qubits, configured to
+match the selected index, together with the corresponding grid qubit. The work
+register is modified by XOR, which makes the operation reversible and permits
+uncomputation by applying the same loading unitary a second time.
+
+The notebooks use Qiskit's little-endian qubit convention. For display and
+analysis, bit strings are reversed where necessary so that the reported arrays
+match the natural order n_0, n_1, ..., n_{N-1} and m_0, ..., m_{M-1}.
+
+3. Version 0: one-dimensional baseline
+--------------------------------------
+
+TFG_V0 constructs the first complete circuit for a one-dimensional grid. The
+registers are:
+
+    n: grid register, encoding occupied/free positions.
+    i: index register, selecting a candidate window start.
+    m: work register, storing the selected window content.
+
+For each valid index i, the circuit temporarily applies X gates to the index
+qubits that must be controlled on zero. It then applies multi-controlled X
+gates from the index and grid qubits to the work register. Finally, it undoes
+the temporary X gates. This implements a direct equality-controlled loading
+scheme.
+
+The statevector analysis traces out the grid register and checks the purity of
+the reduced state. Since the grid is deterministically prepared in the current
+experiments, the reduced state on the index and work registers remains pure,
+and it can be represented by a single ket. The notebook then prints the window
+content associated with each index.
+
+4. Version 1: Gray-order optimisation and penalisation
+------------------------------------------------------
+
+TFG_V1 keeps the one-dimensional setting but introduces two important ideas.
+
+First, the loading circuit is optimised by traversing the valid indices in a
+Gray-like order. In the direct V0 construction, each index requires applying
+and unapplying a full zero-control mask. Consecutive masks often differ in only
+a few bits, so V1 maintains the current mask and toggles only the bits that
+change. This reduces the number of X gates used to implement equality controls.
+
+Second, V1 adds a coherent penalisation mechanism. After the selected window is
+loaded into m, the circuit detects whether the work register differs from the
+target zero window. A flag ancilla and a penalty ancilla are used to divert
+amplitude away from non-target branches through a controlled rotation. The
+postselected branch p = 0 concentrates probability on the accepted states. The
+notebook then studies total probabilities, conditional probabilities, and a
+repeat-until-success sampling model.
+
+This version is not yet a full amplitude-amplification algorithm. It is a
+postselection-based filtering scheme that can be simulated with repeated
+attempts: measure the penalty qubit, accept if p = 0, otherwise discard the
+trial and repeat. The dynamic-circuit section implements this logic using
+conditional measurements.
+
+5. Version 2: extension to N-dimensional grids
+----------------------------------------------
+
+TFG_V2 generalises the baseline model from one dimension to D dimensions. The
+grid and window are parameterised by lists:
+
+    N = [N_1, ..., N_D]
+    M = [M_1, ..., M_D].
+
+The notebook introduces helper functions for:
+
+    converting linear row-major indices to D-dimensional coordinates;
+    converting D-dimensional coordinates back to linear qubit indices;
+    enumerating all valid window starts;
+    enumerating the qubits contained in a D-dimensional window;
+    reshaping and formatting bit strings as N-dimensional arrays.
+
+The central conceptual improvement is the separation between the logical
+geometry of the problem and the linear qubit layout required by Qiskit. A
+window is specified by a start coordinate and a set of local offsets; each
+coordinate is mapped to a row-major linear qubit index. This makes the circuit
+applicable to two-dimensional grids, three-dimensional grids, or more general
+D-dimensional lattices.
+
+V2 also introduces valid-index initialisation from the beginning. This is
+important because the number of admissible windows is often not a power of two.
+For example, a 4 x 4 grid with a 2 x 2 window has 9 valid starts and therefore
+requires 4 index qubits, leaving 7 invalid computational basis states.
+
+6. Version 3: oracle-based interference
+---------------------------------------
+
+TFG_V3 builds on the N-dimensional loading circuit and adds an interference
+stage. An auxiliary qubit is prepared in the phase-kickback state |-> by
+applying X followed by H. An oracle U_f is then applied to the index and
+auxiliary registers. In the current implementation the oracle is intentionally
+minimal:
+
+    U_f: |i>|aux> -> |i>|aux xor f(i)>
+
+with a temporary function f represented by a control on the second index qubit.
+
+The oracle has been wrapped as a named gate labelled U_f, so the circuit
+diagram displays it as a single logical block rather than as its internal CX
+implementation. This improves the correspondence between the circuit diagram
+and the standard oracle notation used in quantum algorithm analysis.
+
+After applying U_f, the notebook uncomputes the window-loading operation by
+calling the same superposition/loading routine again. Since the loading step is
+XOR-based and reversible, this returns the work register to its initial state
+while preserving the phase information introduced by the oracle. Hadamard
+gates on the index register then convert phase differences into measurable
+amplitude differences. This is the basic interference mechanism behind
+Deutsch-Jozsa-like and Grover-like search methods.
+
+The helper function print_state_grouped was also generalised. It now uses
+M_tot and IDX instead of one-dimensional assumptions, prints the integer index,
+reports the corresponding D-dimensional start coordinate when valid, and
+formats the selected window in the current N-dimensional shape.
+
+7. Current limitations
+----------------------
+
+The present notebooks should be understood as constructive prototypes rather
+than final asymptotically optimal algorithms. 
+
+
+The postselection strategy in V1 can identify valid branches but may require
+many repeated trials when the success probability is small. It is therefore a
+useful conceptual bridge toward amplitude amplification, but not yet a
+complete search-speedup mechanism.
+
+The window-loading operation is implemented through multi-controlled X gates,
+whose decomposition can become expensive on real hardware. The current oracle
+in V3 is only a placeholder function and must be replaced by a problem-specific
+predicate. The experiments also rely heavily on statevector analysis, which is
+useful for validation but does not scale to large circuits.
