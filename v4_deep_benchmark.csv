@@ -1,0 +1,4 @@
+case,mode,dimension,N,M,W,valid_windows,P_uniform,theta_default,beta_default,r_star_default_angles,P_valid_at_r_star_default_angles,theta_star_heatmap,beta_star_heatmap,P_valid_heatmap_star,figure
+1d_long_clustered_blocks,cost_phase,1,[32],[4],29,11,0.3793103448275862,0.5235987755982988,0.3,4,0.6473525252679352,0.5235987755982988,0.5235987755982988,0.7396333098793431,v4_deep_1d_long_clustered_blocks_cost_phase
+2d_medium_clustered_obstacles,cost_phase,2,"[6, 6]","[2, 2]",25,8,0.32,0.5235987755982988,0.3,28,0.7642889693193353,0.6544984694978735,1.0471975511965976,0.7536832157364447,v4_deep_2d_medium_clustered_obstacles_cost_phase
+3d_small_clustered_obstacles,cost_phase,3,"[4, 4, 3]","[2, 2, 2]",18,12,0.6666666666666666,0.5235987755982988,0.3,45,0.9473245086978593,2.22529479629277,0.5235987755982988,0.9426864210752733,v4_deep_3d_small_clustered_obstacles_cost_phase
