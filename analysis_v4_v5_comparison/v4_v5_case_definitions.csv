@@ -1,11 +1,11 @@
-name,N,M,occupied_coords,theta,beta,mixer_method
-01_1d_tiny_single_gap,[6],[2],"[(0,), (3,), (4,)]",1.5707963267948966,0.3,local_geometric
-02_1d_main_reference,[8],[2],"[(0,), (1,), (2,), (6,), (7,)]",1.0471975511965976,0.6,linear_valid
-03_1d_two_free_regions,[10],[3],"[(0,), (1,), (7,), (8,), (9,)]",1.0471975511965976,0.3,linear_valid
-04_1d_clustered_medium,[16],[3],"[(0,), (1,), (5,), (6,), (7,), (13,), (14,)]",1.0471975511965976,0.24,local_geometric
-05_1d_long_clustered_blocks,[32],[4],"[(0,), (1,), (2,), (9,), (10,), (11,), (18,), (19,), (28,), (29,), (30,), (31,)]",0.7853981633974483,0.18,local_geometric
-06_2d_tiny_corner_block,"[3, 3]","[2, 2]","[(0, 0), (0, 2), (2, 2)]",1.5707963267948966,0.28,local_geometric
-07_2d_small_diagonal_block,"[4, 4]","[2, 2]","[(1, 1), (2, 2), (0, 3)]",1.5707963267948966,0.24,local_geometric
-08_2d_medium_clustered_obstacles,"[5, 5]","[2, 2]","[(0, 0), (0, 1), (1, 0), (3, 3), (3, 4), (4, 3)]",1.0471975511965976,0.22,local_geometric
-09_2d_rectangular_window,"[6, 6]","[3, 2]","[(0, 0), (0, 1), (1, 0), (4, 4), (4, 5), (5, 4), (2, 3)]",1.0471975511965976,0.18,local_geometric
-10_3d_small_clustered_obstacles,"[4, 4, 3]","[2, 2, 2]","[(0, 0, 0), (0, 0, 1), (1, 0, 0), (3, 3, 2), (3, 2, 2), (2, 3, 2)]",0.7853981633974483,0.16,local_geometric
+name,description,N,M,occupied_coords,theta,beta,mixer_method
+01_1d_tiny_single_gap,Minimal 1D case with one valid window.,[6],[2],"[(0,), (3,), (4,)]",1.5707963267948966,0.3,local_geometric
+02_1d_main_reference,Reference 1D instance used in the manual main experiment.,[8],[2],"[(0,), (1,), (2,), (6,), (7,)]",1.0471975511965976,0.6,local_geometric
+03_1d_two_free_regions,1D grid with two occupied blocks and a central valid plateau.,[10],[3],"[(0,), (1,), (7,), (8,), (9,)]",1.0471975511965976,0.3,local_geometric
+04_1d_clustered_medium,Medium 1D case with several clustered obstacles.,[16],[3],"[(0,), (1,), (5,), (6,), (7,), (13,), (14,)]",1.0471975511965976,0.24,local_geometric
+05_1d_long_clustered_blocks,Longer 1D case with separated occupied blocks.,[32],[4],"[(0,), (1,), (2,), (9,), (10,), (11,), (18,), (19,), (28,), (29,), (30,), (31,)]",0.7853981633974483,0.18,local_geometric
+06_2d_tiny_corner_block,Small 2D case with a single valid 2x2 region.,"[3, 3]","[2, 2]","[(0, 0), (0, 2), (2, 2)]",1.5707963267948966,0.28,local_geometric
+07_2d_small_diagonal_block,4x4 grid with diagonal obstacles and one clear lower-left solution.,"[4, 4]","[2, 2]","[(1, 1), (2, 2), (0, 3)]",1.5707963267948966,0.24,local_geometric
+08_2d_medium_clustered_obstacles,5x5 grid with two compact occupied clusters.,"[5, 5]","[2, 2]","[(0, 0), (0, 1), (1, 0), (3, 3), (3, 4), (4, 3)]",1.0471975511965976,0.22,local_geometric
+09_2d_rectangular_window,6x6 grid with a non-square 3x2 window.,"[6, 6]","[3, 2]","[(0, 0), (0, 1), (1, 0), (4, 4), (4, 5), (5, 4), (2, 3)]",1.0471975511965976,0.18,local_geometric
+10_3d_small_clustered_obstacles,Small 3D grid with two compact occupied clusters.,"[4, 4, 3]","[2, 2, 2]","[(0, 0, 0), (0, 0, 1), (1, 0, 0), (3, 3, 2), (3, 2, 2), (2, 3, 2)]",0.7853981633974483,0.16,local_geometric

@@ -1,5 +1,0 @@
-transition_mode,mean_best_P_valid,median_best_P_valid,cases,most_common_best_mixer,most_common_best_method
-delta_cost,0.8587134266555863,0.8720868409958309,10,linear_valid,M5 (hybrid)
-descent,0.8901075735505067,0.9325202404801687,10,local_geometric,M5 (hybrid)
-valid_boundary,0.8409717964746154,0.8682413185036398,10,linear_valid,M5 (hybrid)
-oriented_valid,0.9115810375934504,0.9257027065906613,10,local_geometric,M5 (hybrid)
