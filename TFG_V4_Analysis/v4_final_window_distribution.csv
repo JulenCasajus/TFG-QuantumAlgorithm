@@ -1,0 +1,131 @@
+version,case,window_index,start,valid,cost,probability
+V4,01_1d_tiny_single_gap,0,"(0,)",False,1,0.13284769983066497
+V4,01_1d_tiny_single_gap,1,"(1,)",True,0,0.7634230555583972
+V4,01_1d_tiny_single_gap,2,"(2,)",False,1,0.05443041541486805
+V4,01_1d_tiny_single_gap,3,"(3,)",False,2,0.01676033162518729
+V4,01_1d_tiny_single_gap,4,"(4,)",False,1,0.032538497570884166
+V4,02_1d_main_reference,0,"(0,)",False,2,0.018927746003349177
+V4,02_1d_main_reference,1,"(1,)",False,2,0.017172627152040692
+V4,02_1d_main_reference,2,"(2,)",False,1,0.0020361225078984932
+V4,02_1d_main_reference,3,"(3,)",True,0,0.7125338744812276
+V4,02_1d_main_reference,4,"(4,)",True,0,0.2144771558803455
+V4,02_1d_main_reference,5,"(5,)",False,1,0.0021834099133826077
+V4,02_1d_main_reference,6,"(6,)",False,2,0.032669064061750436
+V4,03_1d_two_free_regions,0,"(0,)",False,2,0.0010192033758467576
+V4,03_1d_two_free_regions,1,"(1,)",False,1,0.02498412560654305
+V4,03_1d_two_free_regions,2,"(2,)",True,0,0.08542988187141769
+V4,03_1d_two_free_regions,3,"(3,)",True,0,0.5035494676183795
+V4,03_1d_two_free_regions,4,"(4,)",True,0,0.3753935361214868
+V4,03_1d_two_free_regions,5,"(5,)",False,1,0.007430760056808107
+V4,03_1d_two_free_regions,6,"(6,)",False,2,0.000413246328615556
+V4,03_1d_two_free_regions,7,"(7,)",False,3,0.0017797790209017868
+V4,04_1d_clustered_medium,0,"(0,)",False,2,0.00816017998200598
+V4,04_1d_clustered_medium,1,"(1,)",False,1,0.04047445072650756
+V4,04_1d_clustered_medium,2,"(2,)",True,0,0.3529010446746183
+V4,04_1d_clustered_medium,3,"(3,)",False,1,0.0030646757622045887
+V4,04_1d_clustered_medium,4,"(4,)",False,2,0.01087992162794979
+V4,04_1d_clustered_medium,5,"(5,)",False,3,0.00847016152047822
+V4,04_1d_clustered_medium,6,"(6,)",False,2,0.00047590447730214787
+V4,04_1d_clustered_medium,7,"(7,)",False,1,0.005892464636077025
+V4,04_1d_clustered_medium,8,"(8,)",True,0,0.1620723620307374
+V4,04_1d_clustered_medium,9,"(9,)",True,0,0.3423908153133751
+V4,04_1d_clustered_medium,10,"(10,)",True,0,0.008121140665060115
+V4,04_1d_clustered_medium,11,"(11,)",False,1,0.03735621978631136
+V4,04_1d_clustered_medium,12,"(12,)",False,2,0.015523661578481422
+V4,04_1d_clustered_medium,13,"(13,)",False,2,0.004216997218890892
+V4,05_1d_long_clustered_blocks,0,"(0,)",False,3,0.0002040694617956898
+V4,05_1d_long_clustered_blocks,1,"(1,)",False,2,0.0009263837316835878
+V4,05_1d_long_clustered_blocks,2,"(2,)",False,1,0.007413377200796987
+V4,05_1d_long_clustered_blocks,3,"(3,)",True,0,0.046377824519863935
+V4,05_1d_long_clustered_blocks,4,"(4,)",True,0,0.181477369293316
+V4,05_1d_long_clustered_blocks,5,"(5,)",True,0,0.06288170153204169
+V4,05_1d_long_clustered_blocks,6,"(6,)",False,1,0.0026163467549800493
+V4,05_1d_long_clustered_blocks,7,"(7,)",False,2,0.012423582682694357
+V4,05_1d_long_clustered_blocks,8,"(8,)",False,3,0.005370566946201625
+V4,05_1d_long_clustered_blocks,9,"(9,)",False,3,0.002896651083709446
+V4,05_1d_long_clustered_blocks,10,"(10,)",False,2,0.001866082652139825
+V4,05_1d_long_clustered_blocks,11,"(11,)",False,1,0.007354831336298143
+V4,05_1d_long_clustered_blocks,12,"(12,)",True,0,0.08408863792452827
+V4,05_1d_long_clustered_blocks,13,"(13,)",True,0,0.13618906317094048
+V4,05_1d_long_clustered_blocks,14,"(14,)",True,0,0.05075318050998986
+V4,05_1d_long_clustered_blocks,15,"(15,)",False,1,0.00037382959079879417
+V4,05_1d_long_clustered_blocks,16,"(16,)",False,2,0.004455952718666989
+V4,05_1d_long_clustered_blocks,17,"(17,)",False,2,0.005575132752291525
+V4,05_1d_long_clustered_blocks,18,"(18,)",False,2,0.0050527234538503335
+V4,05_1d_long_clustered_blocks,19,"(19,)",False,1,0.012050062995970006
+V4,05_1d_long_clustered_blocks,20,"(20,)",True,0,0.0398000943761083
+V4,05_1d_long_clustered_blocks,21,"(21,)",True,0,0.08636768341134562
+V4,05_1d_long_clustered_blocks,22,"(22,)",True,0,0.12767898276560224
+V4,05_1d_long_clustered_blocks,23,"(23,)",True,0,0.08080930207593878
+V4,05_1d_long_clustered_blocks,24,"(24,)",True,0,0.026467705484028534
+V4,05_1d_long_clustered_blocks,25,"(25,)",False,1,0.005693707574035035
+V4,05_1d_long_clustered_blocks,26,"(26,)",False,2,0.0006839721700057417
+V4,05_1d_long_clustered_blocks,27,"(27,)",False,3,0.0020326388580589293
+V4,05_1d_long_clustered_blocks,28,"(28,)",False,4,0.0001185429723220928
+V4,06_2d_tiny_corner_block,0,"(0, 0)",False,1,0.0004391053910321399
+V4,06_2d_tiny_corner_block,1,"(0, 1)",False,1,0.02625462584980368
+V4,06_2d_tiny_corner_block,2,"(1, 0)",True,0,0.958200471643366
+V4,06_2d_tiny_corner_block,3,"(1, 1)",False,1,0.015105797115798488
+V4,07_2d_small_diagonal_block,0,"(0, 0)",False,1,0.0007930085842247778
+V4,07_2d_small_diagonal_block,1,"(0, 1)",False,1,0.018115793903070936
+V4,07_2d_small_diagonal_block,2,"(0, 2)",False,1,0.02771790179788667
+V4,07_2d_small_diagonal_block,3,"(1, 0)",False,1,0.051694890346305
+V4,07_2d_small_diagonal_block,4,"(1, 1)",False,2,0.004653517233251705
+V4,07_2d_small_diagonal_block,5,"(1, 2)",False,1,0.06494411780536279
+V4,07_2d_small_diagonal_block,6,"(2, 0)",True,0,0.7915126357485505
+V4,07_2d_small_diagonal_block,7,"(2, 1)",False,1,0.009279028973119536
+V4,07_2d_small_diagonal_block,8,"(2, 2)",False,1,0.03128910560822474
+V4,08_2d_medium_clustered_obstacles,0,"(0, 0)",False,3,0.005022290940797048
+V4,08_2d_medium_clustered_obstacles,1,"(0, 1)",False,1,0.005953936853241577
+V4,08_2d_medium_clustered_obstacles,2,"(0, 2)",True,0,0.03241296781371332
+V4,08_2d_medium_clustered_obstacles,3,"(0, 3)",True,0,0.07132805837369663
+V4,08_2d_medium_clustered_obstacles,4,"(1, 0)",False,1,0.0026662127865520993
+V4,08_2d_medium_clustered_obstacles,5,"(1, 1)",True,0,0.27360505895287696
+V4,08_2d_medium_clustered_obstacles,6,"(1, 2)",True,0,0.2328616745101033
+V4,08_2d_medium_clustered_obstacles,7,"(1, 3)",True,0,0.06113384522630447
+V4,08_2d_medium_clustered_obstacles,8,"(2, 0)",True,0,0.04220204242000015
+V4,08_2d_medium_clustered_obstacles,9,"(2, 1)",True,0,0.1799309075701347
+V4,08_2d_medium_clustered_obstacles,10,"(2, 2)",False,1,0.0013498122211498505
+V4,08_2d_medium_clustered_obstacles,11,"(2, 3)",False,2,0.0006294602022722702
+V4,08_2d_medium_clustered_obstacles,12,"(3, 0)",True,0,0.05451761976316651
+V4,08_2d_medium_clustered_obstacles,13,"(3, 1)",True,0,0.03510931250056537
+V4,08_2d_medium_clustered_obstacles,14,"(3, 2)",False,2,0.0009160955939210144
+V4,08_2d_medium_clustered_obstacles,15,"(3, 3)",False,3,0.000360704271506032
+V4,09_2d_rectangular_window,0,"(0, 0)",False,3,0.0004679863633248907
+V4,09_2d_rectangular_window,1,"(0, 1)",False,1,0.019918385984709828
+V4,09_2d_rectangular_window,2,"(0, 2)",False,1,0.005675217871683826
+V4,09_2d_rectangular_window,3,"(0, 3)",False,1,0.012729467090113064
+V4,09_2d_rectangular_window,4,"(0, 4)",True,0,0.11009162175916992
+V4,09_2d_rectangular_window,5,"(1, 0)",False,1,0.004474039023636797
+V4,09_2d_rectangular_window,6,"(1, 1)",True,0,0.11451259384506833
+V4,09_2d_rectangular_window,7,"(1, 2)",False,1,0.0009405007277865023
+V4,09_2d_rectangular_window,8,"(1, 3)",False,1,0.011225179125595664
+V4,09_2d_rectangular_window,9,"(1, 4)",True,0,0.14157746603438537
+V4,09_2d_rectangular_window,10,"(2, 0)",True,0,0.1332886607864491
+V4,09_2d_rectangular_window,11,"(2, 1)",True,0,0.007332322355787911
+V4,09_2d_rectangular_window,12,"(2, 2)",False,1,0.0023747576551727966
+V4,09_2d_rectangular_window,13,"(2, 3)",False,2,0.001303665999408616
+V4,09_2d_rectangular_window,14,"(2, 4)",False,2,0.004889835141217961
+V4,09_2d_rectangular_window,15,"(3, 0)",True,0,0.16606350667011163
+V4,09_2d_rectangular_window,16,"(3, 1)",True,0,0.1900421835158061
+V4,09_2d_rectangular_window,17,"(3, 2)",True,0,0.07032024207027365
+V4,09_2d_rectangular_window,18,"(3, 3)",False,2,0.00017456051539390863
+V4,09_2d_rectangular_window,19,"(3, 4)",False,3,0.0025978074649020745
+V4,10_3d_small_clustered_obstacles,0,"(0, 0, 0)",False,3,0.007626717769344143
+V4,10_3d_small_clustered_obstacles,1,"(0, 0, 1)",False,1,0.0021604326563208496
+V4,10_3d_small_clustered_obstacles,2,"(0, 1, 0)",True,0,0.05902150827374816
+V4,10_3d_small_clustered_obstacles,3,"(0, 1, 1)",True,0,0.1000645158143996
+V4,10_3d_small_clustered_obstacles,4,"(0, 2, 0)",True,0,0.05311956277582534
+V4,10_3d_small_clustered_obstacles,5,"(0, 2, 1)",True,0,0.04030969267716313
+V4,10_3d_small_clustered_obstacles,6,"(1, 0, 0)",False,1,0.00700611282296546
+V4,10_3d_small_clustered_obstacles,7,"(1, 0, 1)",True,0,0.09962945901548888
+V4,10_3d_small_clustered_obstacles,8,"(1, 1, 0)",True,0,0.18083325534200542
+V4,10_3d_small_clustered_obstacles,9,"(1, 1, 1)",True,0,0.14837454982369044
+V4,10_3d_small_clustered_obstacles,10,"(1, 2, 0)",True,0,0.07804652375549899
+V4,10_3d_small_clustered_obstacles,11,"(1, 2, 1)",False,1,0.0013858410582731644
+V4,10_3d_small_clustered_obstacles,12,"(2, 0, 0)",True,0,0.055937810324750474
+V4,10_3d_small_clustered_obstacles,13,"(2, 0, 1)",True,0,0.05395310663408425
+V4,10_3d_small_clustered_obstacles,14,"(2, 1, 0)",True,0,0.08642962959667706
+V4,10_3d_small_clustered_obstacles,15,"(2, 1, 1)",False,1,0.0021711723081361835
+V4,10_3d_small_clustered_obstacles,16,"(2, 2, 0)",True,0,0.015407268127561153
+V4,10_3d_small_clustered_obstacles,17,"(2, 2, 1)",False,3,0.008522841224070484
