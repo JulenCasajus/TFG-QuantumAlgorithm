@@ -1,0 +1,11 @@
+case,best_probability,delta_P_V5_minus_V4,fewer_repetitions,delta_r_V5_minus_V4,best_efficiency,pareto_probability_repetitions
+01_1d_tiny_single_gap,V5,0.12789596570643225,V4,10,V4,tradeoff/tie
+02_1d_main_reference,V4,-0.058069345507530845,V4,4,V4,V4 dominates
+03_1d_two_free_regions,V4,-0.021677701459279164,V4,12,V4,V4 dominates
+04_1d_clustered_medium,V4,-0.12213844550282893,tie,0,V4,V4 dominates
+05_1d_long_clustered_blocks,V4,-0.11928835372933178,V4,8,V4,V4 dominates
+06_2d_tiny_corner_block,V5,0.03143911379015041,V5,-9,V5,V5 dominates
+07_2d_small_diagonal_block,V5,0.022593002682286367,V5,-8,V5,V5 dominates
+08_2d_medium_clustered_obstacles,V4,-0.07035338931858681,V4,14,V4,V4 dominates
+09_2d_rectangular_window,V4,-0.13968359768083294,V5,-17,V5,tradeoff/tie
+10_3d_small_clustered_obstacles,V4,-0.01758543538560442,tie,0,V4,V4 dominates
