@@ -1,0 +1,23 @@
+case,mode,qubits,op_count,reason
+04_1d_clustered_medium,adjacency,23,600,exact statevector shots limited to 16 qubits; case has 23
+04_1d_clustered_medium,laplacian,23,904,exact statevector shots limited to 16 qubits; case has 23
+05_1d_long_clustered_blocks,adjacency,41,1393,exact statevector shots limited to 16 qubits; case has 41
+05_1d_long_clustered_blocks,laplacian,41,2133,exact statevector shots limited to 16 qubits; case has 41
+07_2d_small_diagonal_block,adjacency,24,504,exact statevector shots limited to 16 qubits; case has 24
+07_2d_small_diagonal_block,laplacian,24,724,exact statevector shots limited to 16 qubits; case has 24
+08_2d_medium_clustered_obstacles,adjacency,33,827,exact statevector shots limited to 16 qubits; case has 33
+08_2d_medium_clustered_obstacles,laplacian,33,1147,exact statevector shots limited to 16 qubits; case has 33
+09_2d_rectangular_window,adjacency,47,1384,exact statevector shots limited to 16 qubits; case has 47
+09_2d_rectangular_window,laplacian,47,1944,exact statevector shots limited to 16 qubits; case has 47
+10_3d_small_clustered_obstacles,adjacency,61,1583,exact statevector shots limited to 16 qubits; case has 61
+10_3d_small_clustered_obstacles,laplacian,61,2095,exact statevector shots limited to 16 qubits; case has 61
+11_3d_dual_room_clusters,both,114,nan,qubits 114 > cap 100
+12_3d_layered_obstacle_bands,both,134,nan,qubits 134 > cap 100
+13_3d_rectangular_window_clusters,both,143,nan,qubits 143 > cap 100
+14_4d_small_corner_clusters,both,166,nan,qubits 166 > cap 100
+15_4d_layered_corridors,both,214,nan,qubits 214 > cap 100
+16_4d_rectangular_window,both,255,nan,qubits 255 > cap 100
+17_4d_grouped_islands,both,247,nan,qubits 247 > cap 100
+18_5d_tiny_hypercube_clusters,both,280,nan,qubits 280 > cap 100
+19_5d_layered_sparse_obstacles,both,362,nan,qubits 362 > cap 100
+20_5d_rectangular_hyperwindow,both,455,nan,qubits 455 > cap 100

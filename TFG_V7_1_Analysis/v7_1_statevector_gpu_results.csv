@@ -1,0 +1,13 @@
+case,mode,qubits,backend,P_uniform,P_valid
+01_1d_tiny_single_gap,adjacency,11,"AerSimulator(statevector, GPU)",0.2,0.5325495976600776
+01_1d_tiny_single_gap,laplacian,11,"AerSimulator(statevector, GPU)",0.2,0.5596601273053579
+02_1d_main_reference,adjacency,13,"AerSimulator(statevector, GPU)",0.2857142857142857,0.5667790851693418
+02_1d_main_reference,laplacian,13,"AerSimulator(statevector, GPU)",0.2857142857142857,0.4923279279628778
+03_1d_two_free_regions,adjacency,16,"AerSimulator(statevector, GPU)",0.375,0.6737539078497344
+03_1d_two_free_regions,laplacian,16,"AerSimulator(statevector, GPU)",0.375,0.6064939243994455
+04_1d_clustered_medium,adjacency,23,"AerSimulator(statevector, GPU)",0.2857142857142857,0.47828815751329595
+04_1d_clustered_medium,laplacian,23,"AerSimulator(statevector, GPU)",0.2857142857142857,0.4777468215221378
+06_2d_tiny_corner_block,adjacency,15,"AerSimulator(statevector, GPU)",0.25,0.779786134404124
+06_2d_tiny_corner_block,laplacian,15,"AerSimulator(statevector, GPU)",0.25,0.7797861344041233
+07_2d_small_diagonal_block,adjacency,24,"AerSimulator(statevector, GPU)",0.1111111111111111,0.19016342432052255
+07_2d_small_diagonal_block,laplacian,24,"AerSimulator(statevector, GPU)",0.1111111111111111,0.2360404166911447

@@ -1,0 +1,15 @@
+case,mode,qubits,op_count,reason
+05_1d_long_clustered_blocks,both,41,nan,qubits 41 > GPU shot cap 24
+08_2d_medium_clustered_obstacles,both,33,nan,qubits 33 > GPU shot cap 24
+09_2d_rectangular_window,both,47,nan,qubits 47 > GPU shot cap 24
+10_3d_small_clustered_obstacles,both,61,nan,qubits 61 > GPU shot cap 24
+11_3d_dual_room_clusters,both,114,nan,qubits 114 > GPU shot cap 24
+12_3d_layered_obstacle_bands,both,134,nan,qubits 134 > GPU shot cap 24
+13_3d_rectangular_window_clusters,both,143,nan,qubits 143 > GPU shot cap 24
+14_4d_small_corner_clusters,both,166,nan,qubits 166 > GPU shot cap 24
+15_4d_layered_corridors,both,214,nan,qubits 214 > GPU shot cap 24
+16_4d_rectangular_window,both,255,nan,qubits 255 > GPU shot cap 24
+17_4d_grouped_islands,both,247,nan,qubits 247 > GPU shot cap 24
+18_5d_tiny_hypercube_clusters,both,280,nan,qubits 280 > GPU shot cap 24
+19_5d_layered_sparse_obstacles,both,362,nan,qubits 362 > GPU shot cap 24
+20_5d_rectangular_hyperwindow,both,455,nan,qubits 455 > GPU shot cap 24
