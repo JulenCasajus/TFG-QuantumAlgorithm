@@ -1,0 +1,11 @@
+job_id,case,mode,shots,backend,total_qubits,op_count,W,P_uniform,valid_indices,classical_register
+d8q0aa3ao4ac73au1ac0,01_1d_tiny_single_gap,adjacency,4096,ibm_basquecountry,11,200,5,0.2,1,c_i
+d8q0aa3ao4ac73au1ac0,02_1d_main_reference,adjacency,4096,ibm_basquecountry,13,258,7,0.2857142857142857,3 4,c_i
+d8q0aa3ao4ac73au1ac0,03_1d_two_free_regions,adjacency,4096,ibm_basquecountry,16,350,8,0.375,2 3 4,c_i
+d8q0aa3ao4ac73au1ac0,04_1d_clustered_medium,adjacency,4096,ibm_basquecountry,23,600,14,0.2857142857142857,2 8 9 10,c_i
+d8q0aa3ao4ac73au1ac0,05_1d_long_clustered_blocks,adjacency,4096,ibm_basquecountry,41,1393,29,0.3793103448275862,3 4 5 12 13 14 20 21 22 23 24,c_i
+d8q0aa3ao4ac73au1ac0,06_2d_tiny_corner_block,adjacency,4096,ibm_basquecountry,15,232,4,0.25,2,c_i
+d8q0aa3ao4ac73au1ac0,07_2d_small_diagonal_block,adjacency,4096,ibm_basquecountry,24,504,9,0.1111111111111111,6,c_i
+d8q0aa3ao4ac73au1ac0,08_2d_medium_clustered_obstacles,adjacency,4096,ibm_basquecountry,33,827,16,0.5625,2 3 5 6 7 8 9 12 13,c_i
+d8q0aa3ao4ac73au1ac0,09_2d_rectangular_window,adjacency,4096,ibm_basquecountry,47,1384,20,0.4,4 6 9 10 11 15 16 17,c_i
+d8q0aa3ao4ac73au1ac0,10_3d_small_clustered_obstacles,adjacency,4096,ibm_basquecountry,61,1583,18,0.6666666666666666,2 3 4 5 7 8 9 10 12 13 14 16,c_i
